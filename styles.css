@@ -555,3 +555,56 @@ video {
     padding-top: 23px;
     padding-left: 23px;
 }
+
+.service_wrapper {
+    display: grid;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.img_service {
+    display: grid;
+    height: fit-content;
+}
+
+.service_wrapper {
+    display: grid;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#img_service {
+    margin-top: 35px;
+    height: 500px;
+    margin-left: 55px;
+    padding-bottom: 20px;
+}
+
+.text_service {
+    margin-top: 40px;
+}
+
+.service_text {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    color: #102b5d;
+    font-size: 22px;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-left: 40px;
+    padding-right: 55px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.service_title {
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    color: #102b5d;
+    font-size:x-large;
+    padding-left: 40px;
+    margin-top: 180px;
+}
