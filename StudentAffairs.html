@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>International State College of the Philippines | The Official ISCP Website</title>
+        <link rel="icon" 
+            href="pics/Seal_of_the_International_State_College_of_the_Philippines.png">
+        <link rel="stylesheet" href="styles.css">
+
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>      
+    <div class="loader">
+        <div><img class="load" src="pics/logo.png" 
+            alt="International State College of the Philippines logo"></div>
+    </div>
+    <div class="content"> 
+        <div class="navbar-header">
+            <div class="logo-wrap">
+          <img
+            class="logo"
+            src="pics/logo.png"
+            alt="International State College of the Philippines logo"
+          />
+
+          <img
+            class="logo-text"
+            src="pics/text.png"
+            alt="International State College of the Philippines | The Official ISCP Website"
+          />
+        </div>
+        <div class="search-wrap">
+          <div class="search-box">
+            <input type="text" placeholder="SEARCH" />
+            <i
+              class="fa-solid fa-magnifying-glass"
+              onclick="performSearch()"
+            ></i>
+          </div>
+        </div>
+        </div>
+    <nav>
+        <ul>
+            <li><a href="Index.html">HOME</a></li>
+
+            <li><a href="#">ABOUT <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="Admin.html">ADMIN</a></li>
+                    <li><a href="Hymn.html">HYMN</a></li>
+                    <li><a href="History.html">HISTORY</a></li>
+                    <li><a href="CampusVirtualTour.html"> CAMPUS VIRTUAL TOUR </a></li>
+                    <li><a href="Vision,Mission,&Goals.html">VISION, MISSION & GOALS</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">ADMISSIONS <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="Enrollment.html">ENROLLMENT</a></li>
+                    <li><a href="OnlineEnrollment.html">ONLINE ENROLLMENT</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="#">ACADEMICS <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="Programs.html">PROGRAMS</a></li>
+                </ul>
+            </li>
+            <li><a href="#">SERVICES <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="Alumni.html">ALUMNI</a></li>
+                    <li><a href="Dormitories.html">DORMITORIES</a></li>
+                    <li><a href="CampusChaplaincy.html">CAMPUS CHAPLAINCY</a></li>
+                    <li><a href="FoodServices.html">FOOD SERVICES</a></li>
+                    <li><a href="StudentAffairs.html">STUDENT AFFAIRS</a></li>
+                    <li><a href="SchoolManual.html">COLLEGE MANUAL</a></li>
+                </ul>
+            </li>
+            <li><a href="#">NEWS <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="Events.html">EVENTS</a></li>
+                    <li><a href="Advisories.html">ADVISORIES</a></li>
+                    <li><a href="Guidelines.html">GUIDELINES</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <style>
+        body {
+            background-image: url('CAMPUS/background.png'); 
+            background-size: cover;
+            background-repeat: no-repeat;   
+        }
+    </style>
+
+<div class="container reveal">
+<div class="wrapper">
+<h1 class="vmg"> ISCP STUDENT AFFAIRS </h1>
+<div class="wrapper">
+    <p class="vmg_p">        
+    Welcome to Student Affairs, where we take the "fun" out of "fundamental." 
+    We've got more rules and red tape than a government agency, and we're here to make your college experience as bureaucratically baffling as possible. 
+    But hey, at least we occasionally throw a party that's about as exciting as a nap. 
+    Welcome to the wild world of Student Affairs – where we make adulthood look easy! </p>
+</div>
+
+<div class="container reveal">
+    <div class="feat_row">
+        <div class="feat_col">
+            <img id="img_feat" src="studentaffairs/Late Homework.png" alt="CAFETERIA FOOD SCULPTURE CONTEST"/>
+            <h2 class="feat_title"> LATE HOMEWORK ACCEPTANCE PROGRAM </h2>
+            <h1 class="feat_desc"> Submit your assignments whenever you feel like it, 
+                <br> and we promise not to judge your punctuality. 
+                Your grades will remain a mystery. </h1>
+        </div>
+
+        <div class="feat_col">
+            <img id="img_feat" src="studentaffairs/Lost and Found.png" alt="HALKBOARD ARTISTIC OLYMPICS CONTEST"/>
+            <h2 class="feat_title"> LOST AND FOUND SCAVENGER HUNT </h2>
+            <h1 class="feat_desc">Misplaced your backpack, pencil case, or sanity? 
+                <br> Join our thrilling scavenger hunt where you can search 
+                <br> the entire school for your lost items. </h1>
+        </div>
+
+        <div class="feat_col">
+            <img id="img_feat" src="studentaffairs/Class Clown.png" alt="HALLWAY HIDE AND SEEK"/>
+            <h2 class="feat_title">CLASS CLOWN CERTIFICATION</h2>
+                <h1 class="feat_desc">If you love making your classmates laugh, 
+                    <br>why not get a formal certification in the art of class clowning? 
+                    <br>Warning: may not lead to gainful employment. </h1>
+        </div>
+    </div>
+
+    <div class="container reveal">
+    <div class="feat_row">
+        <div class="feat_col">
+            <img id="img_feat" src="studentaffairs/Detention Package.png" alt="HOMEWORK BONFIRE BONANZA"/>
+            <h2 class="feat_title"> DETENTION VACATION PROGRAM </h2>
+            <h1 class="feat_desc">Accumulate enough detentions, and you'll be eligible 
+                <br>for an all-expenses-paid detention getaway. 
+                <br>Enjoy spending quality time in a quiet room.</h1>
+        </div>
+        <div class="feat_col">
+            <img id="img_feat" src="studentaffairs/Tardiness.png" alt="INTERGALACTIC INTRAMURALS"/>
+            <h2 class="feat_title">TARDINESS TROPHY </h2>
+            <h1 class="feat_desc">Show up late to every class and receive a magnificent trophy
+                <br> to display your impressive consistency. 
+                <br>Perfect for those who prefer making grand entrances.</h1>
+        </div>
+        <div class="feat_col">
+            <img id="img_feat" src="studentaffairs/Homework Excuse.png" alt="INVISIBLE PET PARADE"/>
+            <h2 class="feat_title"> HOMEWORK EXCUSE GENERATOR</h2>
+            <h1 class="feat_desc">Can't complete your assignments? No problem! 
+                <br>Our excuse generator will come up with creative 
+                <br>and far-fetched reasons for your teachers.</h1>
+        </div> 
+    </div>
+
+    <div class="container reveal">
+    <div class="feat_row">
+        <div class="feat_col">
+            <img id="img_feat" src="studentaffairs/Naptime.png" alt="TEACHER VS. STUDENT DANCE-OFF"/>
+            <h2 class="feat_title"> NAPTIME ENRICHMENT </h2>
+            <h1 class="feat_desc">Take a break from those exhausting lectures with our exclusive naptime sessions.
+                <br> We'll provide you with a cozy corner, 
+                <br> complete with snoring classmates.</h1>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+            <script type="text/javascript">
+                VanillaTilt.init(document.querySelectorAll("#img_his"), {
+                    max: 25,
+                    speed: 400
+                });
+
+                VanillaTilt.init(document.querySelectorAll("#img_feat"), {
+                    max: 25,
+                    speed: 400
+                });
+            </script>
+    </body>
+    </html>
+
+        <script type="text/javascript">
+            window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i = 0; i < reveals.length; i++){
+                
+                var windowheight = window.innerHeight;
+                var revealtop = reveals [i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals [i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+        </script>
+        <script>
+            $(window).on('load', function(){
+                $(".loader").fadeOut(1000);
+                $(".content").fadeIn(1000);
+            })
+        </script>
+         <script>
+            function performSearch() {
+             // Get the value from the input field
+             var searchText = document.querySelector('.search-box input').value;
+         
+             // Determine the appropriate page based on the search text
+             var destinationUrl;
+             if (searchText.includes('admin')) {
+                 destinationUrl = '/CCS1_websiteproposal-main/Admin.html';
+             } else if (searchText.includes('hymn')) {
+                 destinationUrl = '/CCS1_websiteproposal-main/Hymn.html';
+             } else if (searchText.includes('history')) {
+                 destinationUrl = '/CCS1_websiteproposal-main/History.html';
+               } else if (searchText.includes('campus virtual tour')) {
+                 destinationUrl = '/CCS1_websiteproposal-main/CampusVirtualTour.html';
+               } else if (searchText.includes('vision mission goals')) {
+                 destinationUrl = '/CCS1_websiteproposal-main/Vision,Mission,&Goals.html';
+               } else if (searchText.includes('enrollment')) {
+                 destinationUrl = '/CCS1_websiteproposal-main/Enrollment.html';
+               } else if (searchText.includes('programs')) {
+                 destinationUrl = '/CCS1_websiteproposal-main/Programs.html';
+               } else if (searchText.includes('alumni')) {
+                 destinationUrl = '/CCS1_websiteproposal-main/Alumni.html';
+               } else if (searchText.includes('dormitories')) {
+                 destinationUrl = '/CCS1_websiteproposal-main/Dormitories.html';
+               } else if (searchText.includes('campus chaplaincy')) {
+                 destinationUrl = '/CCS1_websiteproposal-main/CampusChaplaincy.html';
+               } else if (searchText.includes('food services')) {
+                 destinationUrl = '/CCS1_websiteproposal-main/FoodServices.html';
+               } else if (searchText.includes('student affairs')) {
+                 destinationUrl = '/CCS1_websiteproposal-main/StudentAffairs.html';
+               } else if (searchText.includes('college manual')) {
+                 destinationUrl = '/CCS1_websiteproposal-main/SchoolManual.html';
+               } else if (searchText.includes('events')) {
+                 destinationUrl = '/CCS1_websiteproposal-main/Events.html';
+               } else if (searchText.includes('advisories')) {
+                 destinationUrl = '/CCS1_websiteproposal-main/Advisories.html';
+               } else if (searchText.includes('guidelines')) {
+                 destinationUrl = '/CCS1_websiteproposal-main/Guidelines.html';
+             } else {
+                 // Default page if no conditions are met
+                 destinationUrl = '/CCS1_websiteproposal-main/Index.html';
+             }
+         
+             // Redirect to the determined page with the search query as a parameter
+             window.location.href = destinationUrl + '?query=' + encodeURIComponent(searchText);
+         }
+         
+             </script>
+         
+             <script>
+               window.onload = function() {
+             // Get the query parameter from the URL
+             var urlParams = new URLSearchParams(window.location.search);
+             var query = urlParams.get('query');
+         
+             // Display the query or use it to fetch and display search results
+             // For example, you could display the query in an element with id 'searchQuery'
+             document.getElementById('searchQuery').textContent = query;
+         
+             // Additional code to fetch and display search results based on the query
+         };
+         
+             </script>
+</body>
+</html>

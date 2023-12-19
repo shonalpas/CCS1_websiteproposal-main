@@ -117,92 +117,52 @@
         }
       </style>
 
-      <div class="hymn_wrapper">
-        <h1 class="admin">
-          International State College of the Philippines Hymn
-        </h1>
 
-        <div class="hymn">
-          <video autoplay controls>
-            <source
-              src="CAMPUS/ISCP Hymn.mp4"
-              type="video/mp4"
-              alt="ISCP Hymn"
-            />
-          </video>
-        </div>
-      </div>
-    </div>
-    <script>
-      $(window).on("load", function () {
-        $(".loader").fadeOut(1000);
-        $(".content").fadeIn(1000);
-      });
-    </script>
+<form action="enrollment.php" method="post">
+  <h2>ISCP Enrollment Form</h2>
+
+  <label for="studentName">Student Name:</label>
+  <input type="text" id="studentName" name="studentName" required>
+
+  <label for="birthdate">Birthdate:</label>
+  <input type="date" id="birthdate" name="birthdate" required>
+
+  <label for="gender">Gender:</label>
+  <select id="gender" name="gender">
+      <option value="female">Female</option>
+      <option value="male">Male</option>
+      <option value="other">Other</option>
+  </select>
+
+  <label for="address">Address:</label>
+  <input type="text" id="address" name="address" required>
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="previousSchool">Previous School:</label>
+  <input type="text" id="previousSchool" name="previousSchool">
+
+  <label for="preferredCourse">Preferred Course:</label>
+  <input type="text" id="preferredCourse" name="preferredCourse">
+
+  <label for="healthInfo">Health Information (if any):</label>
+  <textarea id="healthInfo" name="healthInfo"></textarea>
+
+  <!-- Add more fields as needed -->
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
 
 <script>
-  function performSearch() {
-   // Get the value from the input field
-   var searchText = document.querySelector('.search-box input').value;
-
-   // Determine the appropriate page based on the search text
-   var destinationUrl;
-   if (searchText.includes('admin')) {
-       destinationUrl = '/CCS1_websiteproposal-main/Admin.html';
-   } else if (searchText.includes('hymn')) {
-       destinationUrl = '/CCS1_websiteproposal-main/Hymn.html';
-   } else if (searchText.includes('history')) {
-       destinationUrl = '/CCS1_websiteproposal-main/History.html';
-     } else if (searchText.includes('campus virtual tour')) {
-       destinationUrl = '/CCS1_websiteproposal-main/CampusVirtualTour.html';
-     } else if (searchText.includes('vision mission goals')) {
-       destinationUrl = '/CCS1_websiteproposal-main/Vision,Mission,&Goals.html';
-     } else if (searchText.includes('enrollment')) {
-       destinationUrl = '/CCS1_websiteproposal-main/Enrollment.html';
-     } else if (searchText.includes('programs')) {
-       destinationUrl = '/CCS1_websiteproposal-main/Programs.html';
-     } else if (searchText.includes('alumni')) {
-       destinationUrl = '/CCS1_websiteproposal-main/Alumni.html';
-     } else if (searchText.includes('dormitories')) {
-       destinationUrl = '/CCS1_websiteproposal-main/Dormitories.html';
-     } else if (searchText.includes('campus chaplaincy')) {
-       destinationUrl = '/CCS1_websiteproposal-main/CampusChaplaincy.html';
-     } else if (searchText.includes('food services')) {
-       destinationUrl = '/CCS1_websiteproposal-main/FoodServices.html';
-     } else if (searchText.includes('student affairs')) {
-       destinationUrl = '/CCS1_websiteproposal-main/StudentAffairs.html';
-     } else if (searchText.includes('college manual')) {
-       destinationUrl = '/CCS1_websiteproposal-main/SchoolManual.html';
-     } else if (searchText.includes('events')) {
-       destinationUrl = '/CCS1_websiteproposal-main/Events.html';
-     } else if (searchText.includes('advisories')) {
-       destinationUrl = '/CCS1_websiteproposal-main/Advisories.html';
-     } else if (searchText.includes('guidelines')) {
-       destinationUrl = '/CCS1_websiteproposal-main/Guidelines.html';
-   } else {
-       // Default page if no conditions are met
-       destinationUrl = '/CCS1_websiteproposal-main/Index.html';
-   }
-
-   // Redirect to the determined page with the search query as a parameter
-   window.location.href = destinationUrl + '?query=' + encodeURIComponent(searchText);
-}
-
-   </script>
-
-   <script>
-     window.onload = function() {
-   // Get the query parameter from the URL
-   var urlParams = new URLSearchParams(window.location.search);
-   var query = urlParams.get('query');
-
-   // Display the query or use it to fetch and display search results
-   // For example, you could display the query in an element with id 'searchQuery'
-   document.getElementById('searchQuery').textContent = query;
-
-   // Additional code to fetch and display search results based on the query
-};
-
-   </script>
-  </body>
-</html>
+  $(window).on("load", function () {
+    $(".loader").fadeOut(1000);
+    $(".content").fadeIn(1000);
+  });
+</script>

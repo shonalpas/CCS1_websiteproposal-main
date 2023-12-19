@@ -13,17 +13,28 @@
 </head>
 <body>      
         <div class="navbar-header">
-            <img class="logo" src="pics/logo.png" 
-            alt="International State College of the Philippines logo">
-    
-            <img class="logo" src="pics/text.png"
-            alt="International State College of the Philippines | The Official ISCP Website">
+            <div class="logo-wrap">
+          <img
+            class="logo"
+            src="pics/logo.png"
+            alt="International State College of the Philippines logo"
+          />
 
-            <div class="search-box">
-                <input type="text"
-                placeholder="SEARCH">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+          <img
+            class="logo-text"
+            src="pics/text.png"
+            alt="International State College of the Philippines | The Official ISCP Website"
+          />
+        </div>
+        <div class="search-wrap">
+          <div class="search-box">
+            <input type="text" placeholder="SEARCH" />
+            <i
+              class="fa-solid fa-magnifying-glass"
+              onclick="performSearch()"
+            ></i>
+          </div>
+        </div>
         </div>
     <nav>
         <ul>
@@ -32,54 +43,43 @@
             <li><a href="#">ABOUT <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
                     <li><a href="Admin.html">ADMIN</a></li>
-                    <li><a href="#">HISTORY</a></li>
-                    <li><a href="#"> CAMPUS VIRTUAL TOUR </a></li>
-                    <li><a href="#">VISION, MISSION & GOALS</a></li>
+                    <li><a href="Hymn.html">HYMN</a></li>
+                    <li><a href="History.html">HISTORY</a></li>
+                    <li><a href="CampusVirtualTour.html"> CAMPUS VIRTUAL TOUR </a></li>
+                    <li><a href="Vision,Mission,&Goals.html">VISION, MISSION & GOALS</a></li>
                 </ul>
             </li>
 
             <li><a href="#">ADMISSIONS <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
-                    <li><a href="#">ENROLLMENT</a></li>
-                    <li><a href="#">TUITION & COSTS</a></li>
-                    <li><a href="#">SCHOLARSHIPS & AID</a></li>
-                    <li><a href="#">SCHOOL CALENDAR</a></li>
+                    <li><a href="Enrollment.html">ENROLLMENT</a></li>
+                    <li><a href="OnlineEnrollment.html">ONLINE ENROLLMENT</a></li>
                 </ul>
             </li>
             
             <li><a href="#">ACADEMICS <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
                     <li><a href="Programs.html">PROGRAMS</a></li>
-                    <li><a href="#">ACADEMIC UNITS</a></li>
-                    <li><a href="#">E-LIBRARY</a></li>
-                    <li><a href="#">FACULTY LISTING</a></li>
-                    <li><a href="#">INFORMATION HUB</a></li>
                 </ul>
             </li>
             <li><a href="#">SERVICES <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
-                    <li><a href="#">ALUMNI</a></li>
-                    <li><a href="#">DORMITORIES</a></li>
-                    <li><a href="#">CAMPUS CHAPLAINCY</a></li>
-                    <li><a href="#">FOOD SERVICES</a></li>
-                    <li><a href="#">STUDENT AFFAIRS</a></li>
-                    <li><a href="#">COLLEGE MANUAL</a></li>
+                    <li><a href="CampusChaplaincy.html">CAMPUS CHAPLAINCY</a></li>
+                    <li><a href="StudentAffairs.html">STUDENT AFFAIRS</a></li>
+                    <li><a href="SchoolManual.html">COLLEGE MANUAL</a></li>
                 </ul>
             </li>
             <li><a href="#ß">NEWS <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
-                    <li><a href="#">EVENTS</a></li>
-                    <li><a href="#">E-PUBS</a></li>
-                    <li><a href="#">ADVISORIES</a></li>
-                    <li><a href="#">GUIDELINES</a></li>
-                    <li><a href="#">ALUMNI UPDATES</a></li>
+                    <li><a href="Advisories.html">ADVISORIES</a></li>
+                    <li><a href="Guidelines.html">GUIDELINES</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
     <style>
         body {
-            background-image: url('CAMPUS/background.png'); /
+            background-image: url('CAMPUS/background.png');
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -89,6 +89,71 @@
     <div class="background">
         <img class="bg" src="CAMPUS/background.png" alt="background">
     </div>
+
+    <script>
+        function performSearch() {
+         // Get the value from the input field
+         var searchText = document.querySelector('.search-box input').value;
+     
+         // Determine the appropriate page based on the search text
+         var destinationUrl;
+         if (searchText.includes('admin')) {
+             destinationUrl = '/CCS1_websiteproposal-main/Admin.html';
+         } else if (searchText.includes('hymn')) {
+             destinationUrl = '/CCS1_websiteproposal-main/Hymn.html';
+         } else if (searchText.includes('history')) {
+             destinationUrl = '/CCS1_websiteproposal-main/History.html';
+           } else if (searchText.includes('campus virtual tour')) {
+             destinationUrl = '/CCS1_websiteproposal-main/CampusVirtualTour.html';
+           } else if (searchText.includes('vision mission goals')) {
+             destinationUrl = '/CCS1_websiteproposal-main/Vision,Mission,&Goals.html';
+           } else if (searchText.includes('enrollment')) {
+             destinationUrl = '/CCS1_websiteproposal-main/Enrollment.html';
+           } else if (searchText.includes('programs')) {
+             destinationUrl = '/CCS1_websiteproposal-main/Programs.html';
+           } else if (searchText.includes('alumni')) {
+             destinationUrl = '/CCS1_websiteproposal-main/Alumni.html';
+           } else if (searchText.includes('dormitories')) {
+             destinationUrl = '/CCS1_websiteproposal-main/Dormitories.html';
+           } else if (searchText.includes('campus chaplaincy')) {
+             destinationUrl = '/CCS1_websiteproposal-main/CampusChaplaincy.html';
+           } else if (searchText.includes('food services')) {
+             destinationUrl = '/CCS1_websiteproposal-main/FoodServices.html';
+           } else if (searchText.includes('student affairs')) {
+             destinationUrl = '/CCS1_websiteproposal-main/StudentAffairs.html';
+           } else if (searchText.includes('college manual')) {
+             destinationUrl = '/CCS1_websiteproposal-main/SchoolManual.html';
+           } else if (searchText.includes('events')) {
+             destinationUrl = '/CCS1_websiteproposal-main/Events.html';
+           } else if (searchText.includes('advisories')) {
+             destinationUrl = '/CCS1_websiteproposal-main/Advisories.html';
+           } else if (searchText.includes('guidelines')) {
+             destinationUrl = '/CCS1_websiteproposal-main/Guidelines.html';
+         } else {
+             // Default page if no conditions are met
+             destinationUrl = '/CCS1_websiteproposal-main/Index.html';
+         }
+     
+         // Redirect to the determined page with the search query as a parameter
+         window.location.href = destinationUrl + '?query=' + encodeURIComponent(searchText);
+     }
+     
+         </script>
+     
+         <script>
+           window.onload = function() {
+         // Get the query parameter from the URL
+         var urlParams = new URLSearchParams(window.location.search);
+         var query = urlParams.get('query');
+     
+         // Display the query or use it to fetch and display search results
+         // For example, you could display the query in an element with id 'searchQuery'
+         document.getElementById('searchQuery').textContent = query;
+     
+         // Additional code to fetch and display search results based on the query
+     };
+     
+         </script>
 </body>
 </body>
 </html>

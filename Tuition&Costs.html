@@ -10,30 +10,48 @@
         <link rel="stylesheet" href="styles.css">
 
         <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>      
-        <div class="navbar-header">
-            <img class="logo" src="pics/logo.png" 
-            alt="International State College of the Philippines logo">
-    
-            <img class="logo" src="pics/text.png"
-            alt="International State College of the Philippines | The Official ISCP Website">
+    <div class="loader">
+        <div><img class="load" src="pics/logo.png" 
+            alt="International State College of the Philippines logo"></div>
+    </div>
+    <div class="content"> 
 
-            <div class="search-box">
-                <input type="text"
-                placeholder="SEARCH">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+        <div class="navbar-header">
+            <div class="logo-wrap">
+          <img
+            class="logo"
+            src="pics/logo.png"
+            alt="International State College of the Philippines logo"
+          />
+
+          <img
+            class="logo-text"
+            src="pics/text.png"
+            alt="International State College of the Philippines | The Official ISCP Website"
+          />
+        </div>
+        <div class="search-wrap">
+          <div class="search-box">
+            <input type="text" placeholder="SEARCH" />
+            <i
+              class="fa-solid fa-magnifying-glass"
+              onclick="performSearch()"
+            ></i>
+          </div>
+        </div>
         </div>
     <nav>
         <ul>
             <li><a href="Index.html">HOME</a></li>
-            
+
             <li><a href="#">ABOUT <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
                     <li><a href="Admin.html">ADMIN</a></li>
                     <li><a href="Hymn.html">HYMN</a></li>
-                    <li><a href="#">HISTORY</a></li>
+                    <li><a href="History.html">HISTORY</a></li>
                     <li><a href="CampusVirtualTour.html"> CAMPUS VIRTUAL TOUR </a></li>
                     <li><a href="Vision,Mission,&Goals.html">VISION, MISSION & GOALS</a></li>
                 </ul>
@@ -42,57 +60,244 @@
             <li><a href="#">ADMISSIONS <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
                     <li><a href="Enrollment.html">ENROLLMENT</a></li>
-                    <li><a href="#">TUITION & COSTS</a></li>
-                    <li><a href="#">SCHOLARSHIPS & AID</a></li>
-                    <li><a href="#">SCHOOL CALENDAR</a></li>
+                    <li><a href="OnlineEnrollment.html">ONLINE ENROLLMENT</a></li>
                 </ul>
             </li>
             
             <li><a href="#">ACADEMICS <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
                     <li><a href="Programs.html">PROGRAMS</a></li>
-                    <li><a href="#">ACADEMIC UNITS</a></li>
-                    <li><a href="#">E-LIBRARY</a></li>
-                    <li><a href="#">FACULTY LISTING</a></li>
-                    <li><a href="#">INFORMATION HUB</a></li>
                 </ul>
             </li>
             <li><a href="#">SERVICES <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
-                    <li><a href="#">ALUMNI</a></li>
-                    <li><a href="#">DORMITORIES</a></li>
-                    <li><a href="#">CAMPUS CHAPLAINCY</a></li>
-                    <li><a href="#">FOOD SERVICES</a></li>
-                    <li><a href="#">STUDENT AFFAIRS</a></li>
-                    <li><a href="#">COLLEGE MANUAL</a></li>
+                    <li><a href="Alumni.html">ALUMNI</a></li>
+                    <li><a href="Dormitories.html">DORMITORIES</a></li>
+                    <li><a href="CampusChaplaincy.html">CAMPUS CHAPLAINCY</a></li>
+                    <li><a href="FoodServices.html">FOOD SERVICES</a></li>
+                    <li><a href="StudentAffairs.html">STUDENT AFFAIRS</a></li>
+                    <li><a href="SchoolManual.html">COLLEGE MANUAL</a></li>
                 </ul>
             </li>
             <li><a href="#">NEWS <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown">
-                    <li><a href="#">EVENTS</a></li>
-                    <li><a href="#">E-PUBS</a></li>
-                    <li><a href="#">ADVISORIES</a></li>
-                    <li><a href="#">GUIDELINES</a></li>
-                    <li><a href="#">ALUMNI UPDATES</a></li>
+                    <li><a href="Events.html">EVENTS</a></li>
+                    <li><a href="Advisories.html">ADVISORIES</a></li>
+                    <li><a href="Guidelines.html">GUIDELINES</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
     <style>
         body {
-            background-image: url('CAMPUS/background.png'); /
+            background-image: url('CAMPUS/background.png'); 
             background-size: cover;
             background-repeat: no-repeat;
         }
     </style>
 
 <div class="wrapper">
-    <h1 class="admin"> ISCP Estimated Tuition & Fees </h1>
-    <br>
-    
+    <div class="container reveal">
+<h1 class="vmg"> VISION </h1>
+
+<div class="vmg_wrapper">
+    <p class="vmg_p"> 
+        In a world where common sense is not so common, International State 
+        College of the Philippines envisions itself as the epitome of perplexity, where students 
+        navigate a labyrinth of bureaucracy, absurdity, and occasional enlightenment. We aspire 
+        to produce graduates who excel at decoding incomprehensible forms, mastering the art of 
+        waiting in long queues, and embracing the chaos of life with a smile. </p>
 </div>
 
-    
+<div class="container reveal">
+<h1 class="vmg"> MISSION </h1>
+<div class="vmg_wrapper">
+    <p class="vmg_p">
+        At International State College of the Philippines, our mission is to create a surreal and 
+        mind-boggling academic environment where students learn the fine art of expecting the 
+        unexpected. We are committed to offering a curriculum that challenges the very fabric of 
+        logic, encouraging students to question their sanity while navigating through a maze of 
+        contradictory instructions. We aim to foster a sense of camaraderie among our students, 
+        bonding over shared confusion and disbelief, as they embark on a journey filled with 
+        inexplicable rules and regulations. </p>
+    </div>
+    <div class="container reveal">
+    <h1 class="vmg"> GOALS </h1>
+    <div class="vmg_wrapper">
+        <p class="vmg_p">
+            1. Promote Perplexity:
+            <br>
+            We strive to bewilder our students with a curriculum that defies 
+            conventional understanding. Through convoluted lectures, cryptic 
+            assignments, and mind-boggling exam questions, we aim to keep our 
+            students in a perpetual state of bewilderment.
+            <br>
+            <br>
+            2. Embrace Bureaucratic Brilliance:
+            <br>
+            We are dedicated to perfecting the art of bureaucracy. Our goal is 
+            to create a bureaucracy so intricate and convoluted that students 
+            and staff alike are left in awe of its complexity. We will achieve 
+            this by introducing an ever-expanding array of forms, each more 
+            perplexing than the last.
+            <br>
+            <br>
+            3. Champion Absurdity:
+            <br>
+            We intend to celebrate the absurd in all its glory. From organizing events that defy all logic to implementing rules that make no sense whatsoever, we will actively promote a culture of delightful absurdity on our campus.
+            <br>
+            <br>
+            
+            4. Master the Art of Waiting: 
+            <br>
+            We aim to transform waiting into a transcendent experience. Through long queues, inexplicable delays, and impromptu cancellations, we will teach our students the virtue of patience, one never-ending line at a time.
+            <br>
+            <br>
+            5. Create a Community of Confusion: 
+            <br>
+            We strive to build a community where confusion is not just tolerated but embraced. By organizing seminars on topics that nobody understands and hosting workshops that leave participants scratching their heads, we will foster a sense of unity among our bewildered student body. 
+        </p>
+    </div>
+    <div class="container reveal">
+<h1 class="vmg"> VALUES </h1>
+<div class="vmg_wrapper">
+    <p class="vmg_p">
+        1. Absurd Adaptability:
+        <br>
+         We value the ability to adapt to the most nonsensical of situations. Our students will learn to thrive in environments where the rules change daily, and logic is a distant memory. Embracing the absurdity of life will be a core value instilled in every graduate.
 
+        <br>
+        <br>
+        2. Persevering Patience: 
+        <br>
+        We believe in the power of patience, especially in the face of interminable bureaucracy. Our students will develop the stamina to endure endless waiting, navigating convoluted processes with grace, and finding serenity in the midst of chaos.
+        <br>
+        <br>
+        3. Creative Confusion: 
+        <br>
+        We encourage the cultivation of creative confusion. Our students will be inspired to think outside the box, finding innovative solutions to problems that seem to make no sense at all. Embracing the confusion will lead to innovative thinking and a unique perspective on the world.
+        <br>
+        <br>
+        
+        4. Collaborative Chaos: 
+        <br>
+        We promote collaboration in the midst of chaos. Our graduates will learn to work harmoniously in groups, even when the tasks at hand seem utterly bewildering. Teamwork in times of uncertainty will be a hallmark of our alumni.
+        <br>
+        <br>
+
+        5. Mindful Madness: 
+        <br>
+        We emphasize the importance of mindfulness in the face of madness. Our students will be taught to maintain their sanity amidst the insanity, finding moments of clarity and calmness even in the most absurd situations. Mindful madness will be a skill that sets our graduates apart.
+        <br>
+        <br>
+
+        6. Surreal Respect:
+        <br>
+         We cultivate respect for the surreal. Our students will learn to appreciate the bizarre, respect the inexplicable, and honor the unconventional. Embracing diversity of thought and valuing the surreal experiences of others will be at the core of our educational philosophy.
+        <br>
+        <br>
+    </p>
+    <div class="container reveal">
+    <p class="vmg_note">
+        Remember, this satirical vision, mission, goals, and values are meant purely for humor and not to reflect the actual objectives of any real educational institution.
+    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    for (var i = 0; i < reveals.length; i++){
+        
+        var windowheight = window.innerHeight;
+        var revealtop = reveals [i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals [i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+</script>
+<script>
+    $(window).on('load', function(){
+        $(".loader").fadeOut(1000);
+        $(".content").fadeIn(1000);
+    })
+</script>
+
+<script>
+    function performSearch() {
+     // Get the value from the input field
+     var searchText = document.querySelector('.search-box input').value;
+ 
+     // Determine the appropriate page based on the search text
+     var destinationUrl;
+     if (searchText.includes('admin')) {
+         destinationUrl = '/CCS1_websiteproposal-main/Admin.html';
+     } else if (searchText.includes('hymn')) {
+         destinationUrl = '/CCS1_websiteproposal-main/Hymn.html';
+     } else if (searchText.includes('history')) {
+         destinationUrl = '/CCS1_websiteproposal-main/History.html';
+       } else if (searchText.includes('campus virtual tour')) {
+         destinationUrl = '/CCS1_websiteproposal-main/CampusVirtualTour.html';
+       } else if (searchText.includes('vision mission goals')) {
+         destinationUrl = '/CCS1_websiteproposal-main/Vision,Mission,&Goals.html';
+       } else if (searchText.includes('enrollment')) {
+         destinationUrl = '/CCS1_websiteproposal-main/Enrollment.html';
+       } else if (searchText.includes('programs')) {
+         destinationUrl = '/CCS1_websiteproposal-main/Programs.html';
+       } else if (searchText.includes('alumni')) {
+         destinationUrl = '/CCS1_websiteproposal-main/Alumni.html';
+       } else if (searchText.includes('dormitories')) {
+         destinationUrl = '/CCS1_websiteproposal-main/Dormitories.html';
+       } else if (searchText.includes('campus chaplaincy')) {
+         destinationUrl = '/CCS1_websiteproposal-main/CampusChaplaincy.html';
+       } else if (searchText.includes('food services')) {
+         destinationUrl = '/CCS1_websiteproposal-main/FoodServices.html';
+       } else if (searchText.includes('student affairs')) {
+         destinationUrl = '/CCS1_websiteproposal-main/StudentAffairs.html';
+       } else if (searchText.includes('college manual')) {
+         destinationUrl = '/CCS1_websiteproposal-main/SchoolManual.html';
+       } else if (searchText.includes('events')) {
+         destinationUrl = '/CCS1_websiteproposal-main/Events.html';
+       } else if (searchText.includes('advisories')) {
+         destinationUrl = '/CCS1_websiteproposal-main/Advisories.html';
+       } else if (searchText.includes('guidelines')) {
+         destinationUrl = '/CCS1_websiteproposal-main/Guidelines.html';
+     } else {
+         // Default page if no conditions are met
+         destinationUrl = '/CCS1_websiteproposal-main/Index.html';
+     }
+ 
+     // Redirect to the determined page with the search query as a parameter
+     window.location.href = destinationUrl + '?query=' + encodeURIComponent(searchText);
+ }
+ 
+     </script>
+ 
+     <script>
+       window.onload = function() {
+     // Get the query parameter from the URL
+     var urlParams = new URLSearchParams(window.location.search);
+     var query = urlParams.get('query');
+ 
+     // Display the query or use it to fetch and display search results
+     // For example, you could display the query in an element with id 'searchQuery'
+     document.getElementById('searchQuery').textContent = query;
+ 
+     // Additional code to fetch and display search results based on the query
+ };
+ 
+     </script>
 </body>
 </html>

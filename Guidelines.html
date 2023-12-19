@@ -12,35 +12,35 @@
         <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<body>
+<body>      
     <div class="loader">
         <div><img class="load" src="pics/logo.png" 
             alt="International State College of the Philippines logo"></div>
     </div>
     <div class="content"> 
         <div class="navbar-header">
-            <div class="logo-wrap">
-          <img
-            class="logo"
-            src="pics/logo.png"
-            alt="International State College of the Philippines logo"
-          />
+           <div class="logo-wrap">
+            <img
+                class="logo"
+                src="pics/logo.png"
+                alt="International State College of the Philippines logo"
+            />
 
-          <img
-            class="logo-text"
-            src="pics/text.png"
-            alt="International State College of the Philippines | The Official ISCP Website"
-          />
-        </div>
-        <div class="search-wrap">
-          <div class="search-box">
-            <input type="text" placeholder="SEARCH" />
-            <i
-              class="fa-solid fa-magnifying-glass"
-              onclick="performSearch()"
-            ></i>
-          </div>
-        </div>
+            <img
+                class="logo-text"
+                src="pics/text.png"
+                alt="International State College of the Philippines | The Official ISCP Website"
+            />
+            </div>
+            <div class="search-wrap">
+            <div class="search-box">
+                <input type="text" placeholder="SEARCH" />
+                <i
+                class="fa-solid fa-magnifying-glass"
+                onclick="performSearch()"
+                ></i>
+            </div>
+            </div>
         </div>
     <nav>
         <ul>
@@ -89,22 +89,113 @@
     </nav>
     <style>
         body {
-            background-image: url('CAMPUS/background.png');
+            background-image: url('CAMPUS/background.png'); 
             background-size: cover;
             background-repeat: no-repeat;
         }
     </style>
 
 <div class="wrapper">
-    <h1 class="admin"> Campus Virtual Tour </h1>
+    <h1 class="vmg1"> THE ISCP SCHOOL GUIDELINES </h1>
+
+    <div class="container reveal">
+<h1 class="vmg"> Attendance </h1>
+
+<div class="vmg_wrapper">
+    <p class="vmg_p"> 
+        Attend school every day, rain or shine, because we all know that learning only happens inside the classroom, and missing a day will undoubtedly ruin your entire education.
+        </p>
+</div>
+
+<div class="container reveal">
+<h1 class="vmg"> Dress Code </h1>
+<div class="vmg_wrapper">
+    <p class="vmg_p">
+        Make sure to follow the ultra-specific dress code that was clearly designed by a fashion expert. After all, what you wear is far more important than what you learn.</p>
+    </div>
+
+    <div class="container reveal">
+    <h1 class="vmg"> Cellphones </h1>
+    <div class="vmg_wrapper">
+        <p class="vmg_p">
+            Absolutely no cell phones allowed, because we wouldn't want you to access the vast wealth of human knowledge at your fingertips or be reachable by your parents in case of emergencies.
+        </p>
+    </div>
+
+    <div class="container reveal">
+<h1 class="vmg"> Homeworks </h1>
+<div class="vmg_wrapper">
+    <p class="vmg_p">
+        Expect hours of homework every night because your education doesn't end when the school bell rings. Remember, sleep is overrated.
+    </p>
+
+    <div class="container reveal">
+<h1 class="vmg"> Punctuality </h1>
+<div class="vmg_wrapper">
+    <p class="vmg_p">
+        Being one minute late to class is a crime against humanity, and it's essential to ensure that you sprint through the hallways like your life depends on it.
+    </p>
     
-        <div class="video-container">
-            <video autoplay controls>
-                <source src="CAMPUS/ISCP Full Intro.mp4" type="video/mp4" alt="ISCP Campus Virtual Tour">
-            </video>
-        </div>
+    <div class="container reveal">
+<h1 class="vmg"> No Talking </h1>
+<div class="vmg_wrapper">
+    <p class="vmg_p">
+        Silence is golden, and you should never engage in any form of communication with your classmates, especially during lunch or recess. You're here to work, not socialize.
+        </p>
+
+        <div class="container reveal">
+<h1 class="vmg"> Hall Passes </h1>
+<div class="vmg_wrapper">
+    <p class="vmg_p">
+        Make sure to obtain a hall pass from a teacher to use the restroom, as if you're not already trusted to make that decision responsibly.
+
+        <div class="container reveal">
+<h1 class="vmg"> Lunch </h1>
+<div class="vmg_wrapper">
+    <p class="vmg_p">
+        Enjoy the gourmet cuisine served in the cafeteria, and don't forget to savor every bite of the mystery meat and cardboard pizza.
+        </p>
+
+        <div class="container reveal">
+<h1 class="vmg"> Lockers </h1>
+<div class="vmg_wrapper">
+        <p class="vmg_p">
+            Your locker is your second home, and it's absolutely necessary to stuff it with every single textbook you own, just in case you need to do a spontaneous weightlifting session.
+            </p>
+
+            <div class="container reveal">
+<h1 class="vmg"> Recess </h1>
+<div class="vmg_wrapper">
+    <p class="vmg_p">
+        Playtime is for the weak! Who needs fresh air and physical activity when you can sit in a classroom for eight hours straight?
+        </p>
+
+
+    <p class="vmg_note">
+        Remember, this the school guidelines are meant purely for humor and not to reflect the actual objectives of any real educational institution.
+    </p>
 </div>
 </div>
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    for (var i = 0; i < reveals.length; i++){
+        
+        var windowheight = window.innerHeight;
+        var revealtop = reveals [i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals [i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+</script>
 <script>
     $(window).on('load', function(){
         $(".loader").fadeOut(1000);
