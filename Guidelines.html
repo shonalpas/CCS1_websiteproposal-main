@@ -210,41 +210,41 @@ function reveal(){
      // Determine the appropriate page based on the search text
      var destinationUrl;
      if (searchText.includes('admin')) {
-         destinationUrl = '/CCS1_websiteproposal-main/Admin.html';
-     } else if (searchText.includes('hymn')) {
-         destinationUrl = '/CCS1_websiteproposal-main/Hymn.html';
-     } else if (searchText.includes('history')) {
-         destinationUrl = '/CCS1_websiteproposal-main/History.html';
-       } else if (searchText.includes('campus virtual tour')) {
-         destinationUrl = '/CCS1_websiteproposal-main/CampusVirtualTour.html';
-       } else if (searchText.includes('vision mission goals')) {
-         destinationUrl = '/CCS1_websiteproposal-main/Vision,Mission,&Goals.html';
-       } else if (searchText.includes('enrollment')) {
-         destinationUrl = '/CCS1_websiteproposal-main/Enrollment.html';
-       } else if (searchText.includes('programs')) {
-         destinationUrl = '/CCS1_websiteproposal-main/Programs.html';
-       } else if (searchText.includes('alumni')) {
-         destinationUrl = '/CCS1_websiteproposal-main/Alumni.html';
-       } else if (searchText.includes('dormitories')) {
-         destinationUrl = '/CCS1_websiteproposal-main/Dormitories.html';
-       } else if (searchText.includes('campus chaplaincy')) {
-         destinationUrl = '/CCS1_websiteproposal-main/CampusChaplaincy.html';
-       } else if (searchText.includes('food services')) {
-         destinationUrl = '/CCS1_websiteproposal-main/FoodServices.html';
-       } else if (searchText.includes('student affairs')) {
-         destinationUrl = '/CCS1_websiteproposal-main/StudentAffairs.html';
-       } else if (searchText.includes('college manual')) {
-         destinationUrl = '/CCS1_websiteproposal-main/SchoolManual.html';
-       } else if (searchText.includes('events')) {
-         destinationUrl = '/CCS1_websiteproposal-main/Events.html';
-       } else if (searchText.includes('advisories')) {
-         destinationUrl = '/CCS1_websiteproposal-main/Advisories.html';
-       } else if (searchText.includes('guidelines')) {
-         destinationUrl = '/CCS1_websiteproposal-main/Guidelines.html';
-     } else {
-         // Default page if no conditions are met
-         destinationUrl = '/CCS1_websiteproposal-main/Index.html';
-     }
+        destinationUrl = 'Admin.html';
+    } else if (searchText.includes('hymn')) {
+        destinationUrl = 'Hymn.html';
+    } else if (searchText.includes('history')) {
+        destinationUrl = 'History.html';
+      } else if (searchText.includes('campus virtual tour')) {
+        destinationUrl = 'CampusVirtualTour.html';
+      } else if (searchText.includes('vision mission goals')) {
+        destinationUrl = 'Vision,Mission,&Goals.html';
+      } else if (searchText.includes('enrollment')) {
+        destinationUrl = 'Enrollment.html';
+      } else if (searchText.includes('programs')) {
+        destinationUrl = 'Programs.html';
+      } else if (searchText.includes('alumni')) {
+        destinationUrl = 'Alumni.html';
+      } else if (searchText.includes('dormitories')) {
+        destinationUrl = 'Dormitories.html';
+      } else if (searchText.includes('campus chaplaincy')) {
+        destinationUrl = 'CampusChaplaincy.html';
+      } else if (searchText.includes('food services')) {
+        destinationUrl = 'FoodServices.html';
+      } else if (searchText.includes('student affairs')) {
+        destinationUrl = 'StudentAffairs.html';
+      } else if (searchText.includes('college manual')) {
+        destinationUrl = 'SchoolManual.html';
+      } else if (searchText.includes('events')) {
+        destinationUrl = 'Events.html';
+      } else if (searchText.includes('advisories')) {
+        destinationUrl = 'Advisories.html';
+      } else if (searchText.includes('guidelines')) {
+        destinationUrl = 'Guidelines.html';
+    } else {
+        // Default page if no conditions are met
+        destinationUrl = 'Index.html';
+    }
  
      // Redirect to the determined page with the search query as a parameter
      window.location.href = destinationUrl + '?query=' + encodeURIComponent(searchText);
